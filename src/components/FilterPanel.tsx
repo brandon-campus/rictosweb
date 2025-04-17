@@ -1,15 +1,14 @@
-
 import React from 'react';
+import { Slider } from "@/components/ui/slider";
+import { Switch } from "@/components/ui/switch";
 import { 
-  Slider, 
-  Switch, 
   Select, 
   SelectTrigger, 
   SelectValue, 
   SelectContent, 
   SelectItem,
   SelectGroup
-} from "@/components/ui/";
+} from "@/components/ui/select";
 import { Search, Filter, Coffee, Utensils, Briefcase, Heart, Users, Wifi, VolumeX, Volume1, Volume2, DollarSign } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
