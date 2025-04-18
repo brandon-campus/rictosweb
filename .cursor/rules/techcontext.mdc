@@ -1,0 +1,114 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Tech Context: Ricto
+
+## Tecnologías utilizadas
+
+### Frontend Core
+- **React**: Biblioteca principal para construir la interfaz de usuario
+- **TypeScript**: Lenguaje de programación con tipado estático
+- **Vite**: Herramienta de construcción y servidor de desarrollo
+
+### UI/UX
+- **Shadcn UI**: Sistema de componentes basado en Radix UI
+- **TailwindCSS**: Framework de CSS para estilización
+- **Radix UI**: Componentes primitivos accesibles y sin estilos
+- **Lucide React**: Iconografía consistente y escalable
+- **Tailwind Merge**: Utilidad para resolver conflictos de clases
+- **Class Variance Authority**: Para variantes de componentes
+
+### Gestión de estado y datos
+- **React Query**: Biblioteca para manejo de estados, cacheo y fetching
+- **React Hook Form**: Manejo eficiente de formularios
+- **Zod**: Validación de esquemas y runtime type checking
+
+### Utilidades y mejoras UX
+- **Sonner**: Sistema de notificaciones tipo toast
+- **React Router Dom**: Enrutamiento para SPA
+- **Embla Carousel**: Carruseles y sliders optimizados
+- **Date-fns**: Utilidades para manejo de fechas
+- **Recharts**: Visualización de datos (si es necesario para estadísticas)
+
+### Interactividad avanzada
+- **React Resizable Panels**: Para paneles redimensionables
+- **Vaul**: Componentes de drawer/modal avanzados
+- **CMDK**: Interfaz de comando tipo Spotlight
+
+## Configuración de desarrollo
+
+### Entorno de desarrollo
+- **Node.js**: Runtime de JavaScript para desarrollo
+- **npm/yarn**: Gestor de paquetes
+- **VS Code** (recomendado): Editor con extensiones para React/TS
+
+### Scripts disponibles
+- `npm run dev`: Inicia el servidor de desarrollo
+- `npm run build`: Construye para producción
+- `npm run build:dev`: Construye con configuración de desarrollo
+- `npm run lint`: Ejecuta el linter para verificar código
+- `npm run preview`: Previsualiza la build localmente
+
+### Estructura de directorios (propuesta)
+```
+/src
+  /components      # Componentes reutilizables
+    /ui            # Componentes base de Shadcn
+    /layout        # Componentes de estructura
+    /features      # Componentes específicos de features
+  /pages           # Componentes de página/ruta
+  /hooks           # Custom hooks
+  /lib             # Utilidades y helpers
+  /api             # Clientes de API y servicios
+  /context         # Contextos de React
+  /types           # Tipados de TypeScript
+  /styles          # Estilos globales
+  /constants       # Valores constantes
+  /assets          # Recursos estáticos
+```
+
+## Restricciones técnicas
+
+1. **Optimización para web**:
+   - La aplicación debe funcionar en navegadores modernos
+   - No se contempla desarrollo nativo para iOS/Android
+
+2. **Limitaciones de API**:
+   - Posibles límites de rate en API de IA (OpenAI)
+   - Necesidad de gestionar fallbacks para cuando API no responda
+
+3. **Compatibilidad de navegadores**:
+   - Soporte para últimas dos versiones de navegadores principales
+   - Posibles polyfills para características modernas en navegadores antiguos
+
+4. **Rendimiento**:
+   - Bundle size debe mantenerse optimizado
+   - Tiempo de carga inicial < 3 segundos en conexiones promedio
+   - Lazy loading para rutas y componentes pesados
+
+5. **SEO y accesibilidad**:
+   - Implementación de tags semánticos para accesibilidad
+   - Atributos ARIA para elementos interactivos
+   - Soporte para navegación por teclado
+
+## Dependencias
+
+### Dependencias principales
+- React y ecosistema React (react-dom, react-router)
+- TailwindCSS y utilidades asociadas
+- Componentes de Radix UI a través de Shadcn
+- React Query para manejo de datos
+
+### Dependencias de desarrollo
+- TypeScript para tipado estático
+- ESLint para linting de código
+- PostCSS y autoprefixer para procesamiento CSS
+- Vite y plugins relacionados
+
+### Consideraciones de integración
+- La integración con OpenAI API requerirá gestión de claves y seguridad
+- Posible necesidad de backend ligero para ocultar claves de API
+- Estrategia de cacheo para minimizar llamadas a APIs externas
+- Manejo apropiado de estados de carga, error y éxito en interacciones con API

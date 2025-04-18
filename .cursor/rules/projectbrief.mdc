@@ -1,0 +1,51 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Descripción del proyecto: Ricto
+Resumen Ejecutivo
+Ricto es una plataforma web que ayuda a los usuarios a encontrar lugares recomendados según su situación y preferencias específicas. La plataforma combina un sistema de recomendaciones basado en filtros con un asistente de IA llamado "Jamito" para ofrecer una experiencia personalizada.
+Requisitos principales
+Funcionalidades Core
+
+Sistema de recomendación de lugares basado en filtros
+Chatbot de IA ("Jamito") para asistencia conversacional
+Exploración visual de lugares mediante tarjetas informativas
+Sistema de filtrado avanzado por preferencias del usuario
+
+Interfaces principales
+
+Pantalla Principal : Interfaz de bienvenida con acceso a funciones principales
+Exploración de Lugares : Vista de recomendaciones en formato tarjeta/grid
+Chatbot "Jamito" : Interfaz conversacional con IA
+Pantalla de Filtros : Controles para personalizar búsquedas
+
+Objetivos Técnicos
+
+Desarrollo 100% web con React y Vite
+Diseño responsivo (escritorio y móvil)
+Implementación de UI con Shadcn y TailwindCSS
+Posible integración con OpenAI API para el chatbot
+
+Alcance del Proyecto
+Incluido en Alcance
+
+Diseño e implementación de todas las interfaces especificadas.
+Desarrollo de lógica de recomendaciones y filtrado
+Integración básica con API de IA para el chatbot
+Optimización para experiencias de escritorio y móviles.
+
+Fuera de Alcance
+
+Desarrollo de aplicaciones nativas
+Implementación de sistema de usuarios/autenticación (no especificado)
+Complejo backend para almacenamiento de datos (no especificado)
+
+Métricas de Éxito
+
+Tiempo promedio para encontrar un lugar recomendado < 1 minuto
+Experiencia fluida en dispositivos móviles y de escritorio.
+Interfaz intuitiva con alta usabilidad (medida por pruebas de usuario)
+Recomendaciones relevantes según los filtros aplicados
+

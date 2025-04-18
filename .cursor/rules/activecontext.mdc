@@ -1,0 +1,67 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Active Context: Ricto
+
+## Enfoque de trabajo actual
+El desarrollo de Ricto se encuentra en fase inicial de implementación. El enfoque actual está centrado en:
+
+1. **Configuración del entorno de desarrollo**:
+   - Stack tecnológico basado en React + Vite
+   - Implementación de Shadcn UI y TailwindCSS para la interfaz
+   - Configuración de TypeScript para tipado estático
+
+2. **Desarrollo de componentes base**:
+   - Diseño e implementación de la estructura principal de navegación
+   - Creación de componentes reutilizables para tarjetas de lugares
+   - Implementación de controles de filtrado (sliders, switches, selects)
+
+3. **Prototipado de interfaces principales**:
+   - Maquetación de pantalla de inicio con los dos botones principales
+   - Desarrollo del layout base para exploración de lugares
+   - Estructura inicial de la interfaz del chatbot
+
+## Cambios recientes
+- Inicialización del proyecto con Vite
+- Instalación y configuración de dependencias principales
+- Implementación del sistema de diseño base con Shadcn UI
+- Configuración de rutas con React Router Dom
+
+## Próximos pasos
+1. **Desarrollo de interfaces principales**:
+   - Completar la pantalla principal con los dos botones de navegación
+   - Implementar layout responsive para la exploración de lugares
+   - Diseñar y construir la interfaz de chat para Jamito
+
+2. **Funcionalidades core**:
+   - Implementar sistema de filtrado con controles interactivos
+   - Desarrollar lógica para visualización de tarjetas de lugares
+   - Configurar integración inicial con API de OpenAI (o alternativa) para el chatbot
+
+3. **Experiencia de usuario**:
+   - Implementar animaciones y transiciones entre páginas
+   - Optimizar experiencia móvil con gestos y adaptaciones específicas
+   - Testear usabilidad de los controles de filtro
+
+## Decisiones y consideraciones activas
+1. **Chatbot e IA**:
+   - Evaluar opciones para la implementación del chatbot (OpenAI vs alternativas)
+   - Definir el alcance de la personalidad de "Jamito" y sus capacidades
+   - Determinar el balance entre procesamiento local y llamadas a API externas
+
+2. **Datos y backend**:
+   - Definir estructura de datos para lugares y recomendaciones
+   - Evaluar necesidad de backend propio vs APIs de terceros
+   - Considerar estrategias de cacheo para optimizar rendimiento
+
+3. **Diseño responsivo**:
+   - Definir breakpoints específicos para la transición entre layouts
+   - Determinar adaptaciones necesarias para la experiencia móvil
+   - Evaluar enfoque "mobile-first" vs adaptación desde desktop
+
+4. **Accesibilidad**:
+   - Garantizar navegación accesible mediante teclado
+   - Implementar soporte adecuado para lectores de pantalla
+   - Asegurar contrastes y tamaños adecuados para todos los usuarios

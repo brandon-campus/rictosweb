@@ -1,0 +1,90 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Patrones del sistema: Ricto
+Arquitectura del sistema
+Ricto sigue una arquitectura de aplicación de página única (SPA) con React como framework principal, utilizando los siguientes componentes arquitectónicos:
+
+Capa de presentación :
+Componentes reaccionan con Shadcn UI
+Estilización con TailwindCSS
+Gestión de rutas con React Router
+Capa de lógica/estado :
+Gestión de estado global para preferencias de usuario
+Estado local para interfaces interactivas
+React Query para manejo de datos y cacheo
+Capa de datos :
+Cliente HTTP para comunicación con API externas
+Modelo de datos para lugares y recomendaciones
+Persistencia local para preferencias de usuario
+Integraciones externas :
+API de IA para el chatbot Jamito
+Posibles API para información de lugares
+Decisiones técnicas clave
+Reaccionar + Vite :
+Elegido por su rendimiento y facilidad de desarrollo.
+Reemplazo de módulo en caliente para iteración rápida
+Soporte nativo para TypeScript
+Interfaz de usuario de Shadcn + TailwindCSS :
+Componentes accesibles y personalizables.
+Sistema de diseño consistente y responsivo.
+Facilidad para implementar modo oscuro/claro
+Tipo de script :
+Tipado estático para prevenir errores comunes
+Mejor documentación de componentes y APIs
+Mejora de la experiencia de desarrollo con autocompletado
+Enrutador de reacción :
+Navegación declarativa entre vistas
+Soporte para rutas anidadas y parámetros
+Integración con el historial del navegador
+Consulta de reacción :
+Manejo eficiente de estados de carga y error
+Caché inteligente de datos
+Revalidación automática según configuración
+Patrones de diseño en uso
+Componentes controlados vs no controlados :
+Uso de componentes controlados para formularios y filtros
+Componentes no controlados para elementos de UI simples
+Composición de los componentes :
+Componentes pequeños y reutilizables
+Composición sobre herencia para maximizar flexibilidad
+Render props y componentes de orden superior :
+Para compartir lógica entre componentes diferentes
+Implementación de comportamientos reutilizables
+Patrón contenedor/presentación :
+Separación entre lógica de negocio y presentación visual.
+Mejora de la testabilidad y mantenibilidad
+Ganchos personalizados :
+Encapsulación de lógica reutilizable
+Separación de preocupaciones para facilitar las pruebas.
+API de contexto :
+Para estado global limitado a árboles específicos de componentes
+Evitar perforación de puntal manteniendo la estructura de datos clara
+Diseño responsivo con TailwindCSS :
+Enfoque mobile-first con puntos de interrupción específicos
+Utilidades responsivas para adaptación del diseño.
+Relaciones entre componentes
+Jerarquía de componentes :
+Aplicación (contenedor principal)
+Diseño (estructura común a todas las vistas)
+Barra de navegación/Encabezado (navegación global)
+Contenido principal (rutas específicas)
+Pie de página (información común)
+Vistas principales :
+Página de inicio (pantalla inicial con dos botones principales)
+ExplorationPage (vista de exploración de lugares)
+ChatPage (interfaz de Jamito)
+FiltersPage (configuración de filtros y preferencias)
+Componentes compartidos :
+PlaceCard (tarjeta de lugar reutilizable)
+FilterControls (controles de filtrado)
+TagList (lista de etiquetas para categorías)
+PriceRange (indicador de rango de precios)
+Avatar (para el chatbot y posibles usuarios)
+Flujo de datos :
+Datos de filtro -> Sistema de recomendación -> Lista de lugares
+Entrada de chat -> Procesamiento IA -> Respuesta de Jamito
+Preferencias de usuario -> Persistencia local -> Aplicación en sesiones futuras
+

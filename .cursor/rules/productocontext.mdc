@@ -1,0 +1,47 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Contexto del producto: Ricto
+¿Por qué existe este proyecto?
+Ricto nace de la necesidad de resolver un problema común: encontrar el lugar ideal para cada situación específica. En un mundo con innumerables opciones de lugares para visitar (cafeterías, restaurantes, espacios de trabajo), los usuarios suelen sentirse abrumados al intentar encontrar el lugar que mejor se adapte a sus necesidades actuales.
+Las soluciones existentes como Google Maps o Yelp ofrecen información, pero carecen de un enfoque centrado en la situación contextual del usuario (como el estado de ánimo, el propósito de la visita o las necesidades específicas de ambiente).
+Problemas que resolver
+
+Sobrecarga de opciones : Simplifica la búsqueda filtrando lugares según las necesidades contextuales del usuario.
+Decisiones situacionales : Ayuda a encontrar lugares adecuados para situaciones específicas (trabajo, citas, reuniones familiares).
+Información incompleta : Ofrece datos relevantes sobre el ambiente, nivel de ruido y experiencia general que otros servicios no proporcionan claramente.
+Barrera de conocimiento local : Permite descubrir lugares adecuados incluso en zonas desconocidas para el usuario.
+
+Cómo debería funcionar
+El flujo ideal de usuario sigue dos caminos principales:
+
+Ruta conversacional :
+
+El usuario interactúa con Jamito (chatbot)
+Expresa sus necesidades en lenguaje natural.
+Recibe recomendaciones personalizadas basadas en la conversación.
+
+
+Ruta de exploración :
+
+El usuario navega directamente a la vista de recomendaciones.
+Aplicación de filtros según sus preferencias actuales
+Explora visualmente opciones que se ajustan a sus criterios
+Obtenga información detallada sobre lugares específicos
+
+
+
+En ambos casos, la plataforma debe ofrecer información relevante de forma visual y accesible, priorizando la velocidad de decisión y la relevancia contextual.
+Objetivos de la experiencia del usuario
+
+Simplicidad : Interfaz limpia y minimalista que no abrumará con opciones.
+Contextualidad : Capacidad para entender la situación específica del usuario.
+Velocidad : Permitir encontrar lugares adecuados en el menor tiempo posible.
+Personalización : Adaptar recomendaciones a las preferencias individuales.
+Confianza : Proporcionar información suficiente para tomar decisiones informadas.
+Accesibilidad : Experiencia fluida tanto en dispositivos móviles como de escritorio.
+Descubrimiento : Facilitar el descubrimiento de nuevos lugares que el usuario no conocería de otra manera.
+
+La experiencia debe sentirse como tener un amigo local experto que conoce perfectamente tus gustos y necesidades, disponible en cualquier momento para recomendarte el lugar ideal.

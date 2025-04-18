@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
@@ -15,6 +14,7 @@ export interface Place {
   description: string;
   rating: number;
   isFavorite?: boolean;
+  noiseLevel: number;
 }
 
 interface PlaceCardProps {

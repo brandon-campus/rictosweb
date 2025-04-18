@@ -1,11 +1,22 @@
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Map } from 'lucide-react';
 import Header from '@/components/Header';
+import { useAuth } from '@/contexts/AuthContext';
 
 const Index = () => {
+  const navigate = useNavigate();
+  const { user } = useAuth();
+
+  const handleStartChat = () => {
+    if (user) {
+      navigate('/chat');
+    } else {
+      navigate('/auth', { state: { from: '/chat' } });
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -34,7 +45,7 @@ const Index = () => {
                     <p className="text-muted-foreground">
                       Nuestro asistente virtual te ayudará a encontrar el lugar perfecto según tus necesidades.
                     </p>
-                    <Button variant="ghost" className="mt-2 group-hover:bg-primary/20 transition-colors">
+                    <Button variant="ghost" className="mt-2 group-hover:bg-primary/20 transition-colors" onClick={handleStartChat}>
                       Empezar chat
                     </Button>
                   </div>
